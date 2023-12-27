@@ -1,0 +1,45 @@
+@import './../mixins.scss';
+@import './../variables.scss';
+
+
+.category{
+    margin-top: 90px;
+    margin-bottom: 90px;
+
+    &__container{
+        max-width: 1346px;
+        width: 100%;
+        @include df(column,flex-end,flex-start,25px);
+    }
+
+    &__heading{
+        font-size: 24px;
+        line-height: 33px;
+        margin-right: 220px;
+        font-weight: normal;
+        color: $dark-500;
+    }
+
+    &__list{
+        @include df($justify:center,$gap:8px);
+       
+    }
+
+    &__item{
+        @include df(column,flex-end,flex-start,12px);
+        width: 212px;
+    }
+
+    &__item__img{
+        width: 212px;
+        height: 263px;
+    }
+
+    &__inner__title{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: normal;
+        color: $dark-500;
+        text-decoration: underline;
+    }
+}

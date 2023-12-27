@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  vertical-align: middle;
+}
+
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+
+ul,ol,li{
+  list-style-type: none;
+}
+
+.cursor{
+  cursor: pointer;
+}
+  body{
+    font-family: sans-serif;
+}
+
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.cursor:hover{
+opacity: 0.8;
+}
+
+.cursor:active{
+opacity: 0.6;
+}

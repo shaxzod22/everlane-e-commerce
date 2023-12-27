@@ -1,0 +1,42 @@
+@import './../mixins.scss';
+@import './../variables.scss';
+
+
+.mission{
+    margin-bottom: 180px;
+    &__container{
+        max-width: 1346px;
+        width: 100%;
+        padding: 72px 15px;
+        @include df($direction:column,$gap:20px);
+    }
+
+    &__info__wrapper{
+        @include df(column,center,flex-start,12px);
+        color: $light;
+        align-self: flex-end;
+    }
+
+    &__heading{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    &__title{
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.64px;
+    }
+
+    &__btn{
+        border: none;
+        outline: none;
+        width: 240px;
+        height: 41px;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 1.4px;
+        color: $dark-500;
+        align-self: center;
+    }
+}

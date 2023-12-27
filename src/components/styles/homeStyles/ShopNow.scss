@@ -1,0 +1,45 @@
+@import './../mixins.scss';
+@import './../variables.scss';
+
+
+
+.shopNow{
+    width: 100%;
+    padding: 275px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-left: 195px;
+    
+    &__container{
+        @include df($direction:column,$align:center);
+        max-width: 350px;
+        width: 100%;
+        color: $light;
+    }
+
+    &__heading{
+        font-size: 46px;
+        line-height: 55px;
+        letter-spacing: 0.92px;
+        margin-bottom: 14px;
+    }
+
+    &__title{
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__btn{
+        width: 240px;
+        height: 41px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 1.4px;
+        background-color: $light;
+    }
+}

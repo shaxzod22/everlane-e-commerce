@@ -1,0 +1,42 @@
+@import './../mixins.scss';
+@import './../variables.scss';
+
+.shopExample{
+margin-bottom: 90px;
+    &__container{
+        @include df($justify:center);
+        max-width: 1346px;
+        width: 100%;
+    }
+
+    &__list{
+        @include df($gap:12px);
+    }
+
+    &__item{
+        width: 430px;
+        height: 534px;
+        @include df($direction:column,$gap:23px,$justify:center);
+    }
+
+    &__inner__title{
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 0.2px;
+        color: $light;
+        align-self: flex-end;
+    }
+
+    &__btn{
+        width: 240px;
+        height: 41px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 1.4px;
+        color: $dark-500;
+        align-self: center;
+        
+    }
+}

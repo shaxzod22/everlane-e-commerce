@@ -1,0 +1,112 @@
+@import './mixins.scss';
+@import './variables.scss';
+
+.header{
+    @include df(column,center);
+    
+}
+
+.header__signup{
+    background-color: $dark;
+    width: 100%;
+    
+    &__container{
+        @include df($justify:flex-end);
+        max-width: 1370px;
+        width: 100%;
+        padding: 7px 0;
+        padding-right: 20px;
+        padding-left: 20px;
+        color: white;
+        margin-left: auto;
+    }
+    &__wrapper{
+        max-width: 850px;
+        width: 100%;
+        @include df(row,center,space-between);
+    }
+    
+    &__title{
+        @include df($align:center,$gap:4px);
+        font-size: 12px;
+        letter-spacing: 0.2px;
+        line-height: 16px;
+    }
+    
+    &__direction__title{
+        @include df($align:center);
+        gap: 4px;
+        text-decoration: underline;
+    }
+    
+    &__lang__img{
+        width: 57px;
+        height: 16px;
+        cursor: pointer;
+    }
+}
+
+.everlane{
+    width: 100%;
+    &__container{
+        max-width: 1294px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        @include df(row,center,space-between);
+        margin: 0 auto;
+    }
+    
+    &__type__list{
+        @include df($align:center,$gap:24px);
+    }
+    
+    
+    &__type__item{
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.2px;
+        padding: 20px 0;
+    }
+    &__type__item.active{
+        border-bottom: 2px solid $dark-500;
+    }
+    
+    &__logo__img{
+        width: 127px;
+        height: 14px;
+    }
+    
+    &__services__list{
+        @include df($align:center,$gap:24px);
+    }
+    
+    
+}
+
+.categories{
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid #DDDBDC;
+    &__container{
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin:0 auto;
+    }
+    
+    &__list{
+        @include df($align:center,$gap:24px,$justify:center);
+        
+    }
+    
+    &__item{
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.2px;  
+    } 
+}
+
+.categories__item.active{
+    color: $active;
+}
